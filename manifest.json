@@ -1,0 +1,12 @@
+{
+    "name": "yt community post image fix",
+    "description": "yt community post image fix",
+    "version": "0.1",
+    "manifest_version": 3,
+
+    "permissions": ["activeTab", "scripting"],
+
+    "action": {
+        "default_popup": "popup.html"
+      }
+  }
