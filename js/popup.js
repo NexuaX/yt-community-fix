@@ -8,6 +8,6 @@ magicButton.addEventListener("click", async () => {
 
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        files: ['js/myScript.js'],
+        files: ['js/dummy.js'],
     });
 });

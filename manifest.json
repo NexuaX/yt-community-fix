@@ -1,12 +1,25 @@
 {
     "name": "yt community post image fix",
     "description": "yt community post image fix",
-    "version": "0.1",
+    "version": "0.2",
     "manifest_version": 3,
 
     "permissions": ["activeTab", "scripting"],
 
     "action": {
         "default_popup": "popup.html"
-      }
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/c/*/community"],
+            "run_at": "document_idle",
+            "js": ["js/fix-button-addon.js"]
+        },
+        {
+            "matches": ["https://www.youtube.com/channel/*/community*"],
+            "run_at": "document_idle",
+            "js": ["js/image-click-fix.js"]
+        }
+    ]
   }
