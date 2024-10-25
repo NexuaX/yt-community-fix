@@ -22,7 +22,8 @@ function createButton(imageNodes) {
     element.addEventListener("click", () => {
         imageNodes.forEach((image) => {
             if (image.src === '') return;
-            image.src = image.src.split("=")[0];
+            image.setAttribute("width", "auto");
+            image.src = image.src.split("=")[0] + "=h638";
         });
     });
     return element;

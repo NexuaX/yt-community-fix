@@ -1,7 +1,7 @@
 {
-    "name": "yt community post image fix",
-    "description": "yt community post image fix",
-    "version": "0.2",
+    "name": "yt various fixes",
+    "description": "yt theme revert and community post image fix",
+    "version": "0.5",
     "manifest_version": 3,
 
     "permissions": ["activeTab", "scripting"],
@@ -12,7 +12,13 @@
 
     "content_scripts": [
         {
-            "matches": ["https://www.youtube.com/c/*/community"],
+            "matches": ["https://www.youtube.com/*"],
+            "run_at": "document_idle",
+            "js": ["js/dark-theme.js"],
+            "css": ["css/yt-style-fix.css"]
+        },
+        {
+            "matches": ["https://www.youtube.com/c/*/community", "https://www.youtube.com/*/community"],
             "run_at": "document_idle",
             "js": ["js/fix-button-addon.js"]
         },

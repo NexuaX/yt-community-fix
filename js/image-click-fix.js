@@ -8,7 +8,8 @@ setTimeout(() => {
     imageNodes.forEach((image) => {
         image.addEventListener("click", () => {
             if (image.src === '') return;
-            image.src = image.src.split("=")[0];
+            image.setAttribute("width", "auto");
+            image.src = image.src.split("=")[0] + "=h638";
         });
     });
 }, 500)

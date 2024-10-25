@@ -1,0 +1,87 @@
+html {
+    --yt-spec-base-background: var(--yt-spec-general-background-a) !important;
+    --yt-spec-static-brand-red: #fe0000 !important;
+}
+
+body::-webkit-scrollbar {
+    background-color: var(--yt-spec-general-background-a) !important;
+}
+
+ytd-guide-entry-renderer {
+    border-radius: 5px !important;
+}
+
+#endpoint.ytd-guide-entry-renderer:hover {
+    border-radius: 5px !important;
+}
+
+ytd-text-inline-expander {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#expand.ytd-text-inline-expander {
+    position: static !important;
+    align-self: end !important;
+}
+
+#collapse.ytd-text-inline-expander {
+    align-self: end !important;
+    font-size: 1.6rem;
+}
+
+#structured-description ytd-reel-shelf-renderer {
+    display: none !important;
+}
+
+ytd-text-inline-expander div#snippet {
+    mask-image: unset !important;
+}
+
+a.ytd-thumbnail, ytd-thumbnail:before {
+    border-radius: 2px !important;
+}
+
+#description.ytd-watch-metadata:hover {
+    background: #fff1 !important;
+}
+
+#description.ytd-watch-metadata:hover:has(ytd-text-inline-expander[is-expanded]) {
+    background: transparent !important;
+}
+
+#description.ytd-watch-metadata {
+    background: transparent !important;
+}
+
+#background.ytd-masthead {
+    background: var(--yt-spec-general-background-a) !important;
+}
+
+ytd-searchbox #container.ytd-searchbox, ytd-searchbox #container.ytd-searchbox {
+    border-radius: unset !important;
+}
+
+ytd-searchbox #search-icon-legacy.ytd-searchbox, ytd-searchbox #search-icon-legacy.ytd-searchbox {
+    border-radius: unset !important;
+}
+
+.YtThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern {
+    background: #fe0000 !important;
+}
+
+.ytp-cairo-refresh-signature-moments .ytp-play-progress {
+    background: #fe0000 !important;
+}
+
+ytd-thumbnail-overlay-resume-playback-renderer #progress.ytd-thumbnail-overlay-resume-playback-renderer {
+    background: #fe0000 !important;
+}
+
+yt-icon#logo-icon g:first-of-type > path:first-of-type {
+    fill: #fe0000;
+}
+
+.sbdd_b, .sbsb_a {
+    border-radius: 2px !important;
+}
