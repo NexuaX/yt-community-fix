@@ -1,6 +1,7 @@
 console.log("Revert darker dark theme on youtube");
 
 revertTheme();
+removeLargeModeFromPlayer();
 
 function revertTheme() {
 
@@ -14,4 +15,16 @@ function revertTheme() {
 
     setTimeout(revertTheme, 1000);
     
+}
+
+function removeLargeModeFromPlayer() {
+    
+    const player = document.querySelector("#ytd-player .html5-video-player");
+
+    if (player && player.classList.contains("ytp-big-mode")) {
+        player.classList.remove("ytp-big-mode");
+    }
+
+    setTimeout(removeLargeModeFromPlayer, 1000);
+
 }

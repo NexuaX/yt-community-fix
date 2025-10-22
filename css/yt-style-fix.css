@@ -7,6 +7,29 @@ body::-webkit-scrollbar {
     background-color: var(--yt-spec-general-background-a) !important;
 }
 
+/* .ytd-rich-grid-renderer, ytd-rich-shelf-renderer {
+    --ytd-rich-grid-items-per-row: 5 !important;
+    --ytd-rich-grid-posts-per-row: 5 !important;
+    --ytd-rich-grid-slim-items-per-row: 7 !important;
+} */
+
+#frosted-glass {
+    background: var(--yt-spec-base-background) !important;
+}
+
+.ytp-delhi-modern .ytp-play-button,
+.ytp-delhi-modern .ytp-chapter-title.ytp-button,
+.ytp-delhi-modern .ytp-chrome-controls .ytp-right-controls,
+.ytp-delhi-modern .ytp-time-wrapper:not(.ytp-miniplayer-ui *),
+.ytp-delhi-modern .ytp-volume-area
+{
+    background: #18181890 !important;
+}
+
+.ytp-delhi-modern .ytp-progress-list {
+    background: rgba(40,40,40,0.7) !important;
+}
+
 ytd-guide-entry-renderer {
     border-radius: 5px !important;
 }
