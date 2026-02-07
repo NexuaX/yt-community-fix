@@ -1,3 +1,5 @@
+// DEPRECATED - no longer works
+
 console.log("Revert darker dark theme on youtube");
 
 revertTheme();

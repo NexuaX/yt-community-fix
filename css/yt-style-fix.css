@@ -1,28 +1,10 @@
-html {
-    --yt-spec-base-background: var(--yt-spec-general-background-a) !important;
-    --yt-spec-static-brand-red: #fe0000 !important;
-}
 
-body::-webkit-scrollbar {
-    background-color: var(--yt-spec-general-background-a) !important;
-}
-
-/* .ytd-rich-grid-renderer, ytd-rich-shelf-renderer {
-    --ytd-rich-grid-items-per-row: 5 !important;
-    --ytd-rich-grid-posts-per-row: 5 !important;
-    --ytd-rich-grid-slim-items-per-row: 7 !important;
-} */
-
-#frosted-glass {
-    background: var(--yt-spec-base-background) !important;
-}
-
+/* add contrast to controls on the video player */
 .ytp-delhi-modern .ytp-play-button,
 .ytp-delhi-modern .ytp-chapter-title.ytp-button,
 .ytp-delhi-modern .ytp-chrome-controls .ytp-right-controls,
 .ytp-delhi-modern .ytp-time-wrapper:not(.ytp-miniplayer-ui *),
-.ytp-delhi-modern .ytp-volume-area
-{
+.ytp-delhi-modern .ytp-volume-area {
     background: #18181890 !important;
 }
 
@@ -30,14 +12,8 @@ body::-webkit-scrollbar {
     background: rgba(40,40,40,0.7) !important;
 }
 
-ytd-guide-entry-renderer {
-    border-radius: 5px !important;
-}
 
-#endpoint.ytd-guide-entry-renderer:hover {
-    border-radius: 5px !important;
-}
-
+/* fix expanding/collapsing description */
 ytd-text-inline-expander {
     display: flex !important;
     flex-direction: column !important;
@@ -53,18 +29,8 @@ ytd-text-inline-expander {
     font-size: 1.6rem;
 }
 
-#structured-description ytd-reel-shelf-renderer {
-    display: none !important;
-}
 
-ytd-text-inline-expander div#snippet {
-    mask-image: unset !important;
-}
-
-a.ytd-thumbnail, ytd-thumbnail:before {
-    border-radius: 2px !important;
-}
-
+/* fix background of the description */
 #description.ytd-watch-metadata:hover {
     background: #fff1 !important;
 }
@@ -77,34 +43,31 @@ a.ytd-thumbnail, ytd-thumbnail:before {
     background: transparent !important;
 }
 
-#background.ytd-masthead {
-    background: var(--yt-spec-general-background-a) !important;
+
+/* fix/remove the "fade out" effect on collapsed the description */
+ytd-text-inline-expander div#snippet {
+    mask-image: unset !important;
 }
 
-ytd-searchbox #container.ytd-searchbox, ytd-searchbox #container.ytd-searchbox {
-    border-radius: unset !important;
+
+/* hide the "shorts" shelf from expanded description */
+#structured-description ytd-reel-shelf-renderer {
+    display: none !important;
 }
 
-ytd-searchbox #search-icon-legacy.ytd-searchbox, ytd-searchbox #search-icon-legacy.ytd-searchbox {
-    border-radius: unset !important;
+
+/* reduce the border radius of video player */
+ytd-player {
+    border-radius: 6px !important;
 }
 
-.YtThumbnailOverlayProgressBarHostWatchedProgressBarSegmentModern {
-    background: #fe0000 !important;
+
+/* reduce the border radius of the left side bar buttons */
+ytd-guide-entry-renderer {
+    border-radius: 5px !important;
 }
 
-.ytp-cairo-refresh-signature-moments .ytp-play-progress {
-    background: #fe0000 !important;
+#endpoint.ytd-guide-entry-renderer:hover {
+    border-radius: 5px !important;
 }
 
-ytd-thumbnail-overlay-resume-playback-renderer #progress.ytd-thumbnail-overlay-resume-playback-renderer {
-    background: #fe0000 !important;
-}
-
-yt-icon#logo-icon g:first-of-type > path:first-of-type {
-    fill: #fe0000;
-}
-
-.sbdd_b, .sbsb_a {
-    border-radius: 2px !important;
-}

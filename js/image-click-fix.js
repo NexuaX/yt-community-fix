@@ -1,3 +1,5 @@
+// DEPRECATED - no longer needed
+
 console.log("Starting NexuaX image-click-fix script!");
 
 setTimeout(() => {
