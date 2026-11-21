@@ -71,3 +71,7 @@ ytd-guide-entry-renderer {
     border-radius: 5px !important;
 }
 
+/* make views and upload date always visible on home page as by default they are in one line with overflow hidden */
+.ytContentMetadataViewModelMetadataRow { 
+    flex-wrap: wrap !important;
+ }
